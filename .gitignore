@@ -131,6 +131,7 @@ dist
 
 # hexo
 .deploy*/
+public
 db.json
 Thumbs.db
 
@@ -141,7 +142,8 @@ Thumbs.db
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
+
 
 # Thumbnails
 ._*
