@@ -42,8 +42,7 @@ jobs:
         if: steps.cache.outputs.cache-hit != 'true'
         run: |
           npm config set registry http://registry.npmjs.org/
-          npm i -g hexo-cli
           npm i
 
       - name: deploy
-        run: npm deploy
+        run: npm run deploy
