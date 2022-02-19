@@ -28,8 +28,11 @@ jobs:
           ssh-keyscan github.com >> ~/.ssh/known_hosts
           git config --global user.email "cxy036@qq.com"
           git config --global user.name "vivishow" 
-          npm install hexo-cli -g
-          npm install 
+
+      - name: Install dependencies
+        run: |
+          npm i -g hexo-cli
+          npm i
 
       - name: deploy
         run: |
