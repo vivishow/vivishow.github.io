@@ -41,8 +41,7 @@ jobs:
       - name: Install dependencies
         if: steps.cache.outputs.cache-hit != 'true'
         run: |
-          npm config set registry http://registry.npmjs.org/
-          npm i
+          npm i --registry=http://registry.npmjs.org --unsafe-perm --allow-root
 
       - name: deploy
         run: npm run deploy
